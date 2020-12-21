@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: null,
-    // args: ['--start-fullscreen'],
+    args: ['--start-fullscreen'],
     ignoreDefaultArgs: ['--enable-automation'],
   });
 
@@ -12,7 +12,7 @@ const puppeteer = require('puppeteer');
   defaultPage.close();
 
   const page = await browser.newPage();
-  await page.goto('http://192.168.178.31/');
+  await page.goto('https://smartplaner-planerview.web.app/');
 
-  await browser.close();
+  // await browser.close();
 })();
