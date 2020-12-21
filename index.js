@@ -13,7 +13,7 @@ const puppeteer = require('puppeteer');
 
   const page = await browser.newPage();
   await page.goto('http://192.168.178.31:8080/');
-  // Test 8
+  // Test 9
 
   await browser.close();
 })();
