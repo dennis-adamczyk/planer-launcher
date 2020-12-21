@@ -7,10 +7,12 @@ const puppeteer = require('puppeteer');
     // args: ['--start-fullscreen'],
     ignoreDefaultArgs: ['--enable-automation'],
   });
+
   const defaultPage = (await browser.pages())[0];
   defaultPage.close();
+
   const page = await browser.newPage();
   await page.goto('http://192.168.178.31:8080/');
 
-  // await browser.close();
+  await browser.close();
 })();
