@@ -6,6 +6,7 @@ const puppeteer = require('puppeteer');
     defaultViewport: null,
     args: ['--start-fullscreen'],
     ignoreDefaultArgs: ['--enable-automation'],
+    executablePath: '/usr/bin/chromium-browser',
   });
 
   const defaultPage = (await browser.pages())[0];
