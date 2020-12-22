@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: null,
-    args: ['--start-fullscreen', '--app'],
+    args: ['--app'],
     ignoreDefaultArgs: ['--enable-automation'],
     executablePath: '/usr/bin/chromium-browser',
   });
