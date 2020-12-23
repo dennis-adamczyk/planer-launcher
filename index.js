@@ -9,8 +9,8 @@ const puppeteer = require('puppeteer');
     executablePath: '/usr/bin/chromium-browser',
   });
 
-  const page = await browser.newPage();
-  await page.goto('https://smartplaner-planerview.web.app/');
+  // const page = await browser.newPage();
+  // await page.goto('https://smartplaner-planerview.web.app/');
 
   // const defaultPage = (await browser.pages())[0];
   // await defaultPage.close();
