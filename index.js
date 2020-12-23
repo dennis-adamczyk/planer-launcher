@@ -12,8 +12,8 @@ const puppeteer = require('puppeteer');
   const page = await browser.newPage();
   await page.goto('https://smartplaner-planerview.web.app/');
 
-  const defaultPage = (await browser.pages())[0];
-  await defaultPage.close();
+  // const defaultPage = (await browser.pages())[0];
+  // await defaultPage.close();
 
   // await browser.close();
 })();
